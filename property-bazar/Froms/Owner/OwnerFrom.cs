@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace property_bazar.Froms.Owners
+namespace property_bazar.Froms.Owner
 {
     public partial class OwnerFrom : Form
     {
