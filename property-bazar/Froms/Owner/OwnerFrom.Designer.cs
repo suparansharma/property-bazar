@@ -31,10 +31,10 @@ namespace property_bazar.Froms.Owner
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxOwnerId = new System.Windows.Forms.TextBox();
-            this.textBoxOwnerFirstName = new System.Windows.Forms.TextBox();
+            this.txtOwnerFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxOwnerLastName = new System.Windows.Forms.TextBox();
+            this.txtOwnerLastName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxOwnerEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,12 +60,12 @@ namespace property_bazar.Froms.Owner
             this.textBoxOwnerId.Size = new System.Drawing.Size(100, 23);
             this.textBoxOwnerId.TabIndex = 1;
             // 
-            // textBoxOwnerFirstName
+            // txtOwnerFirstName
             // 
-            this.textBoxOwnerFirstName.Location = new System.Drawing.Point(115, 135);
-            this.textBoxOwnerFirstName.Name = "textBoxOwnerFirstName";
-            this.textBoxOwnerFirstName.Size = new System.Drawing.Size(247, 23);
-            this.textBoxOwnerFirstName.TabIndex = 2;
+            this.txtOwnerFirstName.Location = new System.Drawing.Point(115, 135);
+            this.txtOwnerFirstName.Name = "txtOwnerFirstName";
+            this.txtOwnerFirstName.Size = new System.Drawing.Size(247, 23);
+            this.txtOwnerFirstName.TabIndex = 2;
             // 
             // label2
             // 
@@ -85,12 +85,12 @@ namespace property_bazar.Froms.Owner
             this.label3.TabIndex = 5;
             this.label3.Text = "Last Name";
             // 
-            // textBoxOwnerLastName
+            // txtOwnerLastName
             // 
-            this.textBoxOwnerLastName.Location = new System.Drawing.Point(115, 180);
-            this.textBoxOwnerLastName.Name = "textBoxOwnerLastName";
-            this.textBoxOwnerLastName.Size = new System.Drawing.Size(247, 23);
-            this.textBoxOwnerLastName.TabIndex = 4;
+            this.txtOwnerLastName.Location = new System.Drawing.Point(115, 180);
+            this.txtOwnerLastName.Name = "txtOwnerLastName";
+            this.txtOwnerLastName.Size = new System.Drawing.Size(247, 23);
+            this.txtOwnerLastName.TabIndex = 4;
             // 
             // label4
             // 
@@ -149,6 +149,7 @@ namespace property_bazar.Froms.Owner
             this.btnAddOwner.TabIndex = 12;
             this.btnAddOwner.Text = "ADD";
             this.btnAddOwner.UseVisualStyleBackColor = true;
+            this.btnAddOwner.Click += new System.EventHandler(this.btnAddOwner_Click);
             // 
             // OwnerFrom
             // 
@@ -163,9 +164,9 @@ namespace property_bazar.Froms.Owner
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxOwnerEmail);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxOwnerLastName);
+            this.Controls.Add(this.txtOwnerLastName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxOwnerFirstName);
+            this.Controls.Add(this.txtOwnerFirstName);
             this.Controls.Add(this.textBoxOwnerId);
             this.Controls.Add(this.label1);
             this.Name = "OwnerFrom";
@@ -179,10 +180,10 @@ namespace property_bazar.Froms.Owner
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxOwnerId;
-        private System.Windows.Forms.TextBox textBoxOwnerFirstName;
+        private System.Windows.Forms.TextBox txtOwnerFirstName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxOwnerLastName;
+        private System.Windows.Forms.TextBox txtOwnerLastName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxOwnerEmail;
         private System.Windows.Forms.Label label5;

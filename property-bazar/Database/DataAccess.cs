@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace property_bazar.Database
         public string ConnectionString { get; set; }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\AIUB\C#\HospitalMangement\hospital.mdf;Integrated Security=True;Connect Timeout=30";
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\db\propertyBazarDB.mdf;Integrated Security=True;Connect Timeout=30";
         }
         public SqlCommand GetCommand(string sqlQuery)
         {
