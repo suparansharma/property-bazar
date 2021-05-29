@@ -454,23 +454,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\PRANTO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\property-bazar\\property-bazar.csproj",
+      "projectUniqueName": "C:\\Project\\c#project\\property-bazar\\property-bazar\\property-bazar.csproj",
       "projectName": "property-bazar",
-      "projectPath": "D:\\Project\\property-bazar\\property-bazar.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\property-bazar\\obj\\",
+      "projectPath": "C:\\Project\\c#project\\property-bazar\\property-bazar\\property-bazar.csproj",
+      "packagesPath": "C:\\Users\\PRANTO\\.nuget\\packages\\",
+      "outputPath": "C:\\Project\\c#project\\property-bazar\\property-bazar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PRANTO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
