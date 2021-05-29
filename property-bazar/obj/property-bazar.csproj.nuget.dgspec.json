@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# Project\\property-bazar\\property-bazar.csproj": {}
+    "D:\\Project\\property-bazar\\property-bazar.csproj": {}
   },
   "projects": {
-    "D:\\C# Project\\property-bazar\\property-bazar.csproj": {
+    "D:\\Project\\property-bazar\\property-bazar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Project\\property-bazar\\property-bazar.csproj",
+        "projectUniqueName": "D:\\Project\\property-bazar\\property-bazar.csproj",
         "projectName": "property-bazar",
-        "projectPath": "D:\\C# Project\\property-bazar\\property-bazar.csproj",
+        "projectPath": "D:\\Project\\property-bazar\\property-bazar.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Project\\property-bazar\\obj\\",
+        "outputPath": "D:\\Project\\property-bazar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
