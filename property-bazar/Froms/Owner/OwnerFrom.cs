@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace property_bazar.Froms.Owner
 {
     public partial class OwnerFrom : Form
@@ -19,28 +21,40 @@ namespace property_bazar.Froms.Owner
             InitializeComponent();
         }
 
+
+
         public void AddOwner()
         {
             DataAccess dataaccess = new DataAccess();
             string sql = string.Format("insert into tblUser (fname,lname)" +
-                "values('{0}', '{1}')", txtOwnerFirstName.Text,txtOwnerLastName.Text);
+            "values('{0}', '{1}')", txtOwnerFirstName.Text, txtOwnerLastName.Text);
             SqlCommand command = dataaccess.GetCommand(sql);
+
+
 
             command.Connection.Open();
 
+
+
             int rowsAffected = command.ExecuteNonQuery();
+
+
 
             if (rowsAffected > 0)
             {
                 MessageBox.Show("Saved Successfully!!");
             }
-            else 
-            { 
+            else
+            {
                 MessageBox.Show("Something went wrong");
             }
 
+
+
             command.Connection.Close();
         }
+
+
 
         private void btnAddOwner_Click(object sender, EventArgs e)
         {
@@ -48,3 +62,4 @@ namespace property_bazar.Froms.Owner
         }
     }
 }
+
