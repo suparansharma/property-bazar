@@ -33,9 +33,11 @@ namespace property_bazar.Froms.Owner
             if (rowsAffected > 0)
             {
                 MessageBox.Show("Saved Successfully!!");
-
             }
-            else { MessageBox.Show("Something went wrong"); }
+            else 
+            { 
+                MessageBox.Show("Something went wrong");
+            }
 
             command.Connection.Close();
         }

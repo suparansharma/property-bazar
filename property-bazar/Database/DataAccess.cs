@@ -13,7 +13,7 @@ namespace property_bazar.Database
         public string ConnectionString { get; set; }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project\c#project\db\propertyBazarDB.mdf;Integrated Security=True;Connect Timeout=30";
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\db\propertyBazarDB.mdf;Integrated Security=True;Connect Timeout=30";
         }
         public SqlCommand GetCommand(string sqlQuery)
         {
