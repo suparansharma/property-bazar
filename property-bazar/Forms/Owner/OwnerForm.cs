@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace property_bazar.Froms.Owner
 {
-    public partial class OwnerFrom : Form
+    public partial class OwnerForm : Form
     {
-        public OwnerFrom()
+        public OwnerForm()
         {
             InitializeComponent();
         }

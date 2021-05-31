@@ -1,7 +1,7 @@
 ﻿
 namespace property_bazar.Froms.Owner
 {
-    partial class OwnerFrom
+    partial class OwnerForm
     {
         /// <summary>
         /// Required designer variable.
