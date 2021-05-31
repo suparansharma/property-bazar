@@ -1,3 +1,4 @@
+using property_bazar.Forms.Login;
 using property_bazar.Froms.Owner;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace property_bazar
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OwnerForm());
+            Application.Run(new LoginForm());
         }
     }
 }

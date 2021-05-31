@@ -1,4 +1,5 @@
 ﻿using property_bazar.Database;
+using property_bazar.Froms.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +44,7 @@ namespace property_bazar.Froms.Owner
             if (rowsAffected > 0)
             {
                 MessageBox.Show("Saved Successfully!!");
+               
             }
             else
             {
@@ -59,6 +61,8 @@ namespace property_bazar.Froms.Owner
         private void btnAddOwner_Click(object sender, EventArgs e)
         {
             AddOwner();
+            ClientForm c = new ClientForm();
+            c.Show();
         }
     }
 }

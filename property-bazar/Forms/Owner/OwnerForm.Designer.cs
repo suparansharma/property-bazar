@@ -47,7 +47,7 @@ namespace property_bazar.Froms.Owner
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 96);
+            this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 15);
             this.label1.TabIndex = 0;
@@ -55,14 +55,14 @@ namespace property_bazar.Froms.Owner
             // 
             // textBoxOwnerId
             // 
-            this.textBoxOwnerId.Location = new System.Drawing.Point(115, 93);
+            this.textBoxOwnerId.Location = new System.Drawing.Point(106, 21);
             this.textBoxOwnerId.Name = "textBoxOwnerId";
             this.textBoxOwnerId.Size = new System.Drawing.Size(100, 23);
             this.textBoxOwnerId.TabIndex = 1;
             // 
             // txtOwnerFirstName
             // 
-            this.txtOwnerFirstName.Location = new System.Drawing.Point(115, 135);
+            this.txtOwnerFirstName.Location = new System.Drawing.Point(106, 63);
             this.txtOwnerFirstName.Name = "txtOwnerFirstName";
             this.txtOwnerFirstName.Size = new System.Drawing.Size(247, 23);
             this.txtOwnerFirstName.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace property_bazar.Froms.Owner
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 138);
+            this.label2.Location = new System.Drawing.Point(12, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 3;
@@ -79,7 +79,7 @@ namespace property_bazar.Froms.Owner
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 183);
+            this.label3.Location = new System.Drawing.Point(12, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 5;
@@ -87,7 +87,7 @@ namespace property_bazar.Froms.Owner
             // 
             // txtOwnerLastName
             // 
-            this.txtOwnerLastName.Location = new System.Drawing.Point(115, 180);
+            this.txtOwnerLastName.Location = new System.Drawing.Point(106, 108);
             this.txtOwnerLastName.Name = "txtOwnerLastName";
             this.txtOwnerLastName.Size = new System.Drawing.Size(247, 23);
             this.txtOwnerLastName.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace property_bazar.Froms.Owner
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 229);
+            this.label4.Location = new System.Drawing.Point(12, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 15);
             this.label4.TabIndex = 7;
@@ -103,7 +103,7 @@ namespace property_bazar.Froms.Owner
             // 
             // textBoxOwnerEmail
             // 
-            this.textBoxOwnerEmail.Location = new System.Drawing.Point(115, 226);
+            this.textBoxOwnerEmail.Location = new System.Drawing.Point(106, 154);
             this.textBoxOwnerEmail.Name = "textBoxOwnerEmail";
             this.textBoxOwnerEmail.Size = new System.Drawing.Size(247, 23);
             this.textBoxOwnerEmail.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace property_bazar.Froms.Owner
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 274);
+            this.label5.Location = new System.Drawing.Point(12, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 15);
             this.label5.TabIndex = 9;
@@ -119,7 +119,7 @@ namespace property_bazar.Froms.Owner
             // 
             // textBoxOwnerPhoneNumber
             // 
-            this.textBoxOwnerPhoneNumber.Location = new System.Drawing.Point(115, 271);
+            this.textBoxOwnerPhoneNumber.Location = new System.Drawing.Point(106, 199);
             this.textBoxOwnerPhoneNumber.Name = "textBoxOwnerPhoneNumber";
             this.textBoxOwnerPhoneNumber.Size = new System.Drawing.Size(247, 23);
             this.textBoxOwnerPhoneNumber.TabIndex = 8;
@@ -127,7 +127,7 @@ namespace property_bazar.Froms.Owner
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 312);
+            this.label6.Location = new System.Drawing.Point(12, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 15);
             this.label6.TabIndex = 11;
@@ -135,7 +135,7 @@ namespace property_bazar.Froms.Owner
             // 
             // textBoxOwnerAddress
             // 
-            this.textBoxOwnerAddress.Location = new System.Drawing.Point(115, 309);
+            this.textBoxOwnerAddress.Location = new System.Drawing.Point(106, 237);
             this.textBoxOwnerAddress.Multiline = true;
             this.textBoxOwnerAddress.Name = "textBoxOwnerAddress";
             this.textBoxOwnerAddress.Size = new System.Drawing.Size(247, 63);
@@ -151,7 +151,7 @@ namespace property_bazar.Froms.Owner
             this.btnAddOwner.UseVisualStyleBackColor = true;
             this.btnAddOwner.Click += new System.EventHandler(this.btnAddOwner_Click);
             // 
-            // OwnerFrom
+            // OwnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +169,7 @@ namespace property_bazar.Froms.Owner
             this.Controls.Add(this.txtOwnerFirstName);
             this.Controls.Add(this.textBoxOwnerId);
             this.Controls.Add(this.label1);
-            this.Name = "OwnerFrom";
+            this.Name = "OwnerForm";
             this.Text = "Owner ";
             this.ResumeLayout(false);
             this.PerformLayout();
