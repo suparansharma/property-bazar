@@ -33,7 +33,7 @@ namespace property_bazar.Froms.Client
         {
             DataAccess dataaccess = new DataAccess();
             string sql = string.Format("insert into tblClient (firstName,lastName,email,phoneNumber,address)" +
-            "values('{0}', '{1}','{2}','{3}','{4}')", txtClientFirstName.Text, txtClientLastName.Text, textBoxClientEmail, textBoxClientPhoneNumber, textBoxClientAddress);
+            "values('{0}', '{1}','{2}','{3}','{4}')", txtClientFirstName.Text, txtClientLastName.Text, txtClientEmail.Text, txtClientPhoneNumber.Text, txtClientAddress.Text);
             SqlCommand command = dataaccess.GetCommand(sql);
 
 
@@ -79,6 +79,11 @@ namespace property_bazar.Froms.Client
         }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void textBoxClientPhoneNumber_TextChanged(object sender, EventArgs e)
         {
 
         }

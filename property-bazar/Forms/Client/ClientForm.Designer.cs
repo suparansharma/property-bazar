@@ -31,11 +31,11 @@ namespace property_bazar.Froms.Client
         {
             this.btnAddClient = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxClientAddress = new System.Windows.Forms.TextBox();
+            this.txtClientAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxClientPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtClientPhoneNumber = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxClientEmail = new System.Windows.Forms.TextBox();
+            this.txtClientEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtClientLastName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,13 +66,13 @@ namespace property_bazar.Froms.Client
             this.label6.TabIndex = 24;
             this.label6.Text = "Address";
             // 
-            // textBoxClientAddress
+            // txtClientAddress
             // 
-            this.textBoxClientAddress.Location = new System.Drawing.Point(104, 260);
-            this.textBoxClientAddress.Multiline = true;
-            this.textBoxClientAddress.Name = "textBoxClientAddress";
-            this.textBoxClientAddress.Size = new System.Drawing.Size(247, 63);
-            this.textBoxClientAddress.TabIndex = 23;
+            this.txtClientAddress.Location = new System.Drawing.Point(104, 260);
+            this.txtClientAddress.Multiline = true;
+            this.txtClientAddress.Name = "txtClientAddress";
+            this.txtClientAddress.Size = new System.Drawing.Size(247, 63);
+            this.txtClientAddress.TabIndex = 23;
             // 
             // label5
             // 
@@ -83,12 +83,13 @@ namespace property_bazar.Froms.Client
             this.label5.TabIndex = 22;
             this.label5.Text = "Phone Number";
             // 
-            // textBoxClientPhoneNumber
+            // txtClientPhoneNumber
             // 
-            this.textBoxClientPhoneNumber.Location = new System.Drawing.Point(104, 222);
-            this.textBoxClientPhoneNumber.Name = "textBoxClientPhoneNumber";
-            this.textBoxClientPhoneNumber.Size = new System.Drawing.Size(247, 23);
-            this.textBoxClientPhoneNumber.TabIndex = 21;
+            this.txtClientPhoneNumber.Location = new System.Drawing.Point(104, 222);
+            this.txtClientPhoneNumber.Name = "txtClientPhoneNumber";
+            this.txtClientPhoneNumber.Size = new System.Drawing.Size(247, 23);
+            this.txtClientPhoneNumber.TabIndex = 21;
+            this.txtClientPhoneNumber.TextChanged += new System.EventHandler(this.textBoxClientPhoneNumber_TextChanged);
             // 
             // label4
             // 
@@ -99,13 +100,13 @@ namespace property_bazar.Froms.Client
             this.label4.TabIndex = 20;
             this.label4.Text = "Email";
             // 
-            // textBoxClientEmail
+            // txtClientEmail
             // 
-            this.textBoxClientEmail.Location = new System.Drawing.Point(104, 177);
-            this.textBoxClientEmail.Name = "textBoxClientEmail";
-            this.textBoxClientEmail.Size = new System.Drawing.Size(247, 23);
-            this.textBoxClientEmail.TabIndex = 19;
-            this.textBoxClientEmail.TextChanged += new System.EventHandler(this.textBoxClientEmail_TextChanged);
+            this.txtClientEmail.Location = new System.Drawing.Point(104, 177);
+            this.txtClientEmail.Name = "txtClientEmail";
+            this.txtClientEmail.Size = new System.Drawing.Size(247, 23);
+            this.txtClientEmail.TabIndex = 19;
+            this.txtClientEmail.TextChanged += new System.EventHandler(this.textBoxClientEmail_TextChanged);
             // 
             // label3
             // 
@@ -186,11 +187,11 @@ namespace property_bazar.Froms.Client
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAddClient);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxClientAddress);
+            this.Controls.Add(this.txtClientAddress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxClientPhoneNumber);
+            this.Controls.Add(this.txtClientPhoneNumber);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxClientEmail);
+            this.Controls.Add(this.txtClientEmail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtClientLastName);
             this.Controls.Add(this.label2);
@@ -209,11 +210,11 @@ namespace property_bazar.Froms.Client
 
         private System.Windows.Forms.Button btnAddClient;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxClientAddress;
+        private System.Windows.Forms.TextBox txtClientAddress;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxClientPhoneNumber;
+        private System.Windows.Forms.TextBox txtClientPhoneNumber;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxClientEmail;
+        private System.Windows.Forms.TextBox txtClientEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtClientLastName;
         private System.Windows.Forms.Label label2;
