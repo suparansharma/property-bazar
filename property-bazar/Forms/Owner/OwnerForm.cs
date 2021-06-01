@@ -23,23 +23,18 @@ namespace property_bazar.Froms.Owner
         }
 
 
-
+        
         public void AddOwner()
         {
+            string password = "1234";
             DataAccess dataaccess = new DataAccess();
-            string sql = string.Format("insert into tblUser (fname,lname)" +
-            "values('{0}', '{1}')", txtOwnerFirstName.Text, txtOwnerLastName.Text);
+            string sql = string.Format("insert into tblOwner (ownerFirstName, ownerLastName, ownerUserName, ownerEmail, ownerPhoneNumber, ownerAddress, updatedTime)" +
+            "values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}' )", txtOwnerFirstName.Text, txtOwnerLastName.Text, txtOwnerUserName.Text, txtOwnerEmail.Text, txtOwnerPhoneNumber.Text, txtOwnerAddress.Text, System.DateTime.Now.ToString());
             SqlCommand command = dataaccess.GetCommand(sql);
-
-
 
             command.Connection.Open();
 
-
-
             int rowsAffected = command.ExecuteNonQuery();
-
-
 
             if (rowsAffected > 0)
             {

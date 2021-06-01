@@ -36,12 +36,16 @@ namespace property_bazar.Froms.Owner
             this.label3 = new System.Windows.Forms.Label();
             this.txtOwnerLastName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxOwnerEmail = new System.Windows.Forms.TextBox();
+            this.txtOwnerEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxOwnerPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtOwnerPhoneNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxOwnerAddress = new System.Windows.Forms.TextBox();
+            this.txtOwnerAddress = new System.Windows.Forms.TextBox();
             this.btnAddOwner = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtOwnerUserName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +66,7 @@ namespace property_bazar.Froms.Owner
             // 
             // txtOwnerFirstName
             // 
-            this.txtOwnerFirstName.Location = new System.Drawing.Point(106, 63);
+            this.txtOwnerFirstName.Location = new System.Drawing.Point(107, 41);
             this.txtOwnerFirstName.Name = "txtOwnerFirstName";
             this.txtOwnerFirstName.Size = new System.Drawing.Size(247, 23);
             this.txtOwnerFirstName.TabIndex = 2;
@@ -70,7 +74,7 @@ namespace property_bazar.Froms.Owner
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 66);
+            this.label2.Location = new System.Drawing.Point(13, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 3;
@@ -79,7 +83,7 @@ namespace property_bazar.Froms.Owner
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 111);
+            this.label3.Location = new System.Drawing.Point(13, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 5;
@@ -87,7 +91,7 @@ namespace property_bazar.Froms.Owner
             // 
             // txtOwnerLastName
             // 
-            this.txtOwnerLastName.Location = new System.Drawing.Point(106, 108);
+            this.txtOwnerLastName.Location = new System.Drawing.Point(107, 86);
             this.txtOwnerLastName.Name = "txtOwnerLastName";
             this.txtOwnerLastName.Size = new System.Drawing.Size(247, 23);
             this.txtOwnerLastName.TabIndex = 4;
@@ -95,51 +99,51 @@ namespace property_bazar.Froms.Owner
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 157);
+            this.label4.Location = new System.Drawing.Point(13, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "Email";
             // 
-            // textBoxOwnerEmail
+            // txtOwnerEmail
             // 
-            this.textBoxOwnerEmail.Location = new System.Drawing.Point(106, 154);
-            this.textBoxOwnerEmail.Name = "textBoxOwnerEmail";
-            this.textBoxOwnerEmail.Size = new System.Drawing.Size(247, 23);
-            this.textBoxOwnerEmail.TabIndex = 6;
+            this.txtOwnerEmail.Location = new System.Drawing.Point(107, 167);
+            this.txtOwnerEmail.Name = "txtOwnerEmail";
+            this.txtOwnerEmail.Size = new System.Drawing.Size(247, 23);
+            this.txtOwnerEmail.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 202);
+            this.label5.Location = new System.Drawing.Point(13, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Phone Number";
             // 
-            // textBoxOwnerPhoneNumber
+            // txtOwnerPhoneNumber
             // 
-            this.textBoxOwnerPhoneNumber.Location = new System.Drawing.Point(106, 199);
-            this.textBoxOwnerPhoneNumber.Name = "textBoxOwnerPhoneNumber";
-            this.textBoxOwnerPhoneNumber.Size = new System.Drawing.Size(247, 23);
-            this.textBoxOwnerPhoneNumber.TabIndex = 8;
+            this.txtOwnerPhoneNumber.Location = new System.Drawing.Point(107, 212);
+            this.txtOwnerPhoneNumber.Name = "txtOwnerPhoneNumber";
+            this.txtOwnerPhoneNumber.Size = new System.Drawing.Size(247, 23);
+            this.txtOwnerPhoneNumber.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 240);
+            this.label6.Location = new System.Drawing.Point(13, 253);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 15);
             this.label6.TabIndex = 11;
             this.label6.Text = "Address";
             // 
-            // textBoxOwnerAddress
+            // txtOwnerAddress
             // 
-            this.textBoxOwnerAddress.Location = new System.Drawing.Point(106, 237);
-            this.textBoxOwnerAddress.Multiline = true;
-            this.textBoxOwnerAddress.Name = "textBoxOwnerAddress";
-            this.textBoxOwnerAddress.Size = new System.Drawing.Size(247, 63);
-            this.textBoxOwnerAddress.TabIndex = 10;
+            this.txtOwnerAddress.Location = new System.Drawing.Point(107, 250);
+            this.txtOwnerAddress.Multiline = true;
+            this.txtOwnerAddress.Name = "txtOwnerAddress";
+            this.txtOwnerAddress.Size = new System.Drawing.Size(247, 63);
+            this.txtOwnerAddress.TabIndex = 10;
             // 
             // btnAddOwner
             // 
@@ -151,28 +155,53 @@ namespace property_bazar.Froms.Owner
             this.btnAddOwner.UseVisualStyleBackColor = true;
             this.btnAddOwner.Click += new System.EventHandler(this.btnAddOwner_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtOwnerUserName);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtOwnerFirstName);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtOwnerLastName);
+            this.panel1.Controls.Add(this.txtOwnerAddress);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtOwnerEmail);
+            this.panel1.Controls.Add(this.txtOwnerPhoneNumber);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(26, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 323);
+            this.panel1.TabIndex = 13;
+            // 
+            // txtOwnerUserName
+            // 
+            this.txtOwnerUserName.Location = new System.Drawing.Point(107, 130);
+            this.txtOwnerUserName.Name = "txtOwnerUserName";
+            this.txtOwnerUserName.Size = new System.Drawing.Size(247, 23);
+            this.txtOwnerUserName.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 134);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 15);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "User Name";
+            // 
             // OwnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 546);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAddOwner);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxOwnerAddress);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxOwnerPhoneNumber);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxOwnerEmail);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtOwnerLastName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtOwnerFirstName);
-            this.Controls.Add(this.textBoxOwnerId);
-            this.Controls.Add(this.label1);
             this.Name = "OwnerForm";
             this.Text = "Owner ";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -185,11 +214,14 @@ namespace property_bazar.Froms.Owner
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtOwnerLastName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxOwnerEmail;
+        private System.Windows.Forms.TextBox txtOwnerEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxOwnerPhoneNumber;
+        private System.Windows.Forms.TextBox txtOwnerPhoneNumber;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxOwnerAddress;
+        private System.Windows.Forms.TextBox txtOwnerAddress;
         private System.Windows.Forms.Button btnAddOwner;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtOwnerUserName;
+        private System.Windows.Forms.Label label7;
     }
 }
