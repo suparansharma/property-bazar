@@ -1,4 +1,5 @@
-﻿using System;
+﻿using property_bazar.Froms.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace property_bazar.Forms.Main
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            ClientForm c = new ClientForm();
+            c.Show();
+            this.Close();
         }
     }
 }

@@ -42,11 +42,14 @@ namespace property_bazar.Froms.Client
             this.txtClientFirstName = new System.Windows.Forms.TextBox();
             this.textBoxClientId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnViewClient = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddClient
             // 
-            this.btnAddClient.Location = new System.Drawing.Point(324, 379);
+            this.btnAddClient.Location = new System.Drawing.Point(7, 437);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(66, 33);
             this.btnAddClient.TabIndex = 25;
@@ -149,15 +152,38 @@ namespace property_bazar.Froms.Client
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(10, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 15);
+            this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 13;
-            this.label1.Text = "ID";
+            this.label1.Text = "User Name";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(357, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(546, 280);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            // 
+            // btnViewClient
+            // 
+            this.btnViewClient.Location = new System.Drawing.Point(104, 433);
+            this.btnViewClient.Name = "btnViewClient";
+            this.btnViewClient.Size = new System.Drawing.Size(66, 37);
+            this.btnViewClient.TabIndex = 27;
+            this.btnViewClient.Text = "View";
+            this.btnViewClient.UseVisualStyleBackColor = true;
+            this.btnViewClient.Click += new System.EventHandler(this.btnViewClient_Click);
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 482);
+            this.Controls.Add(this.btnViewClient);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAddClient);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxClientAddress);
@@ -173,6 +199,7 @@ namespace property_bazar.Froms.Client
             this.Controls.Add(this.label1);
             this.Name = "ClientForm";
             this.Text = "ClientForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +220,7 @@ namespace property_bazar.Froms.Client
         private System.Windows.Forms.TextBox txtClientFirstName;
         private System.Windows.Forms.TextBox textBoxClientId;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnViewClient;
     }
 }

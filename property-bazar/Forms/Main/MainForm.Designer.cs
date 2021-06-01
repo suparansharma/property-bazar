@@ -50,6 +50,7 @@ namespace property_bazar.Forms.Main
             this.btnClient.TabIndex = 1;
             this.btnClient.Text = "CLIENT";
             this.btnClient.UseVisualStyleBackColor = true;
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // MainForm
             // 

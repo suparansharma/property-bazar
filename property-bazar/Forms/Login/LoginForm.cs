@@ -1,4 +1,5 @@
-﻿using System;
+﻿using property_bazar.Forms.Main;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,13 @@ namespace property_bazar.Forms.Login
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MainForm m = new MainForm();
+            m.Show();
+            this.Close();
         }
     }
 }

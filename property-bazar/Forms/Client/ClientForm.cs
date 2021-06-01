@@ -64,5 +64,23 @@ namespace property_bazar.Froms.Client
         {
             AddClient();
         }
+        DataTable dt;
+
+        private void btnViewClient_Click(object sender, EventArgs e)
+        {
+            DataAccess dataaccess = new DataAccess();
+            String query = "Select * FROM tblClient ";
+            SqlCommand commandd = dataaccess.GetCommand(query);
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+
+            dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

@@ -67,6 +67,7 @@ namespace property_bazar.Forms.Login
             this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label2
             // 
