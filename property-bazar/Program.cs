@@ -19,7 +19,7 @@ namespace property_bazar
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OwnerForm());
+            Application.Run(new LoginForm());
         }
     }
 }
