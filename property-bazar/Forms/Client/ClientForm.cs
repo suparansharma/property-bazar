@@ -81,11 +81,54 @@ namespace property_bazar.Froms.Client
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
+            textBoxClientId.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            txtClientFirstName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txtClientLastName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            txtClientEmail.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            txtClientPhoneNumber.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            txtClientAddress.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            
+          
+
         }
 
         private void textBoxClientPhoneNumber_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdateClient_Click(object sender, EventArgs e)
+        {
+            DataAccess dataaccess = new DataAccess();
+
+            string sql1 = string.Format("Select * FROM tblClient  ");
+            SqlCommand commandd = dataaccess.GetCommand(sql1);
+            commandd.Connection.Open();
+            
+            String query = "UPDATE tblClient SET firstName= '" + txtClientFirstName.Text + "',lastName= '" + txtClientLastName.Text + "',email= '" + txtClientEmail.Text + "',phoneNumber= '" + txtClientPhoneNumber.Text + "',address= '" + txtClientAddress.Text + "' WHERE Id ='" + textBoxClientId.Text + "' "; 
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+            sda.SelectCommand.ExecuteNonQuery();
+            MessageBox.Show("Updated");
+
+            commandd.Connection.Close();
+        }
+
+        private void btnDeleteClient_Click(object sender, EventArgs e)
+        {
+            DataAccess dataaccess = new DataAccess();
+
+            string sql1 = string.Format("Select * FROM tblClient ");
+            SqlCommand commandd = dataaccess.GetCommand(sql1);
+            commandd.Connection.Open();
+            String query = "DELETE FROM tblClient  WHERE Id ='" + textBoxClientId.Text + "' ";
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+            sda.SelectCommand.ExecuteNonQuery();
+
+
+            commandd.Connection.Close();
+            MessageBox.Show("Delete successfully!!!!");
         }
     }
 }

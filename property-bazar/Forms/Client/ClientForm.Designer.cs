@@ -44,6 +44,8 @@ namespace property_bazar.Froms.Client
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnViewClient = new System.Windows.Forms.Button();
+            this.btnUpdateClient = new System.Windows.Forms.Button();
+            this.btnDeleteClient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +180,33 @@ namespace property_bazar.Froms.Client
             this.btnViewClient.UseVisualStyleBackColor = true;
             this.btnViewClient.Click += new System.EventHandler(this.btnViewClient_Click);
             // 
+            // btnUpdateClient
+            // 
+            this.btnUpdateClient.Location = new System.Drawing.Point(210, 433);
+            this.btnUpdateClient.Name = "btnUpdateClient";
+            this.btnUpdateClient.Size = new System.Drawing.Size(66, 37);
+            this.btnUpdateClient.TabIndex = 28;
+            this.btnUpdateClient.Text = "Update";
+            this.btnUpdateClient.UseVisualStyleBackColor = true;
+            this.btnUpdateClient.Click += new System.EventHandler(this.btnUpdateClient_Click);
+            // 
+            // btnDeleteClient
+            // 
+            this.btnDeleteClient.Location = new System.Drawing.Point(324, 433);
+            this.btnDeleteClient.Name = "btnDeleteClient";
+            this.btnDeleteClient.Size = new System.Drawing.Size(66, 37);
+            this.btnDeleteClient.TabIndex = 29;
+            this.btnDeleteClient.Text = "Delete";
+            this.btnDeleteClient.UseVisualStyleBackColor = true;
+            this.btnDeleteClient.Click += new System.EventHandler(this.btnDeleteClient_Click);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 482);
+            this.ClientSize = new System.Drawing.Size(915, 496);
+            this.Controls.Add(this.btnDeleteClient);
+            this.Controls.Add(this.btnUpdateClient);
             this.Controls.Add(this.btnViewClient);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAddClient);
@@ -223,5 +247,7 @@ namespace property_bazar.Froms.Client
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnViewClient;
+        private System.Windows.Forms.Button btnUpdateClient;
+        private System.Windows.Forms.Button btnDeleteClient;
     }
 }
