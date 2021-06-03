@@ -372,3 +372,5 @@ DataAccess.cs
 /obj
 
 /db
+*.mdf
+*.ldf
