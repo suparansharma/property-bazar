@@ -1,4 +1,5 @@
 ﻿using property_bazar.Froms.Client;
+using property_bazar.Froms.Owner;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,13 @@ namespace property_bazar.Forms.Main
         {
             ClientForm c = new ClientForm();
             c.Show();
+            this.Close();
+        }
+
+        private void btnOwner_Click(object sender, EventArgs e)
+        {
+            OwnerForm of = new OwnerForm();
+            of.Show();
             this.Close();
         }
     }

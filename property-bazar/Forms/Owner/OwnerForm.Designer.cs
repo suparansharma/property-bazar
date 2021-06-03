@@ -45,7 +45,10 @@ namespace property_bazar.Froms.Owner
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtOwnerUserName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dataGridViewOwner = new System.Windows.Forms.DataGridView();
+            this.btnViewOwner = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOwner)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -190,17 +193,40 @@ namespace property_bazar.Froms.Owner
             this.label7.TabIndex = 12;
             this.label7.Text = "User Name";
             // 
+            // dataGridViewOwner
+            // 
+            this.dataGridViewOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOwner.Location = new System.Drawing.Point(426, 64);
+            this.dataGridViewOwner.Name = "dataGridViewOwner";
+            this.dataGridViewOwner.RowTemplate.Height = 25;
+            this.dataGridViewOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewOwner.Size = new System.Drawing.Size(486, 284);
+            this.dataGridViewOwner.TabIndex = 27;
+            // 
+            // btnViewOwner
+            // 
+            this.btnViewOwner.Location = new System.Drawing.Point(215, 434);
+            this.btnViewOwner.Name = "btnViewOwner";
+            this.btnViewOwner.Size = new System.Drawing.Size(66, 33);
+            this.btnViewOwner.TabIndex = 28;
+            this.btnViewOwner.Text = "VIEW";
+            this.btnViewOwner.UseVisualStyleBackColor = true;
+            this.btnViewOwner.Click += new System.EventHandler(this.btnViewOwner_Click);
+            // 
             // OwnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 546);
+            this.Controls.Add(this.btnViewOwner);
+            this.Controls.Add(this.dataGridViewOwner);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAddOwner);
             this.Name = "OwnerForm";
             this.Text = "Owner ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOwner)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,5 +249,7 @@ namespace property_bazar.Froms.Owner
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtOwnerUserName;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridViewOwner;
+        private System.Windows.Forms.Button btnViewOwner;
     }
 }

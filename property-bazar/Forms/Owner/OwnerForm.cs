@@ -58,6 +58,19 @@ namespace property_bazar.Froms.Owner
             ClientForm c = new ClientForm();
             c.Show();
         }
+        DataTable dt;
+        private void btnViewOwner_Click(object sender, EventArgs e)
+        {
+            DataAccess dataaccess = new DataAccess();
+            String query = "Select * FROM tblClient ";
+            SqlCommand commandd = dataaccess.GetCommand(query);
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+
+            dt = new DataTable();
+            sda.Fill(dt);
+            dataGridViewOwner.DataSource = dt;
+
+        }
     }
 }
 

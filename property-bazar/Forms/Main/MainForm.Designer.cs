@@ -41,6 +41,7 @@ namespace property_bazar.Forms.Main
             this.btnOwner.TabIndex = 0;
             this.btnOwner.Text = "OWNER";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnClient
             // 
