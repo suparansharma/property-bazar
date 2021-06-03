@@ -62,7 +62,7 @@ namespace property_bazar.Froms.Owner
         private void btnViewOwner_Click(object sender, EventArgs e)
         {
             DataAccess dataaccess = new DataAccess();
-            String query = "Select * FROM tblClient ";
+            String query = "Select * FROM tblOwnergit add ";
             SqlCommand commandd = dataaccess.GetCommand(query);
             SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
 
@@ -73,4 +73,3 @@ namespace property_bazar.Froms.Owner
         }
     }
 }
-
