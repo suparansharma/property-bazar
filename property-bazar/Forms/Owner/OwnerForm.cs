@@ -81,5 +81,20 @@ namespace property_bazar.Froms.Owner
             txtOwnerPhoneNumber.Text = dataGridViewOwner.SelectedRows[0].Cells[4].Value.ToString();
             txtOwnerAddress.Text = dataGridViewOwner.SelectedRows[0].Cells[5].Value.ToString();
         }
+
+        private void btnOwnerUpdate_Click(object sender, EventArgs e)
+        {
+            DataAccess dataAccess = new DataAccess();
+            string sql1 = string.Format("Select * FROM tblOwner  ");
+            SqlCommand commandd = dataAccess.GetCommand(sql1);
+            commandd.Connection.Open();
+            string query = " UPDATE tblOwner SET ownerFirstName = '" + txtOwnerFirstName.Text + "', ownerLastName = '" + txtOwnerLastName.Text + "', ownerEmail= '" + txtOwnerEmail.Text + "', ownerPhoneNumber= '" + txtOwnerPhoneNumber.Text + "', ownerAddress= '" + txtOwnerAddress.Text + " ' WHERE ownerUserName = '" + txtOwnerUserName.Text + "' ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+            sda.SelectCommand.ExecuteNonQuery();
+            MessageBox.Show("Updated");
+
+            commandd.Connection.Close();
+
+        }
     }
 }
