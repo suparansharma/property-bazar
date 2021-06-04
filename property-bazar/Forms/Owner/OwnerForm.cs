@@ -17,6 +17,7 @@ namespace property_bazar.Froms.Owner
 {
     public partial class OwnerForm : Form
     {
+        DataAccess dataAccess = new DataAccess();
         public OwnerForm()
         {
             InitializeComponent();
@@ -26,10 +27,9 @@ namespace property_bazar.Froms.Owner
         
         public void AddOwner()
         {
-            DataAccess dataaccess = new DataAccess();
             string sql = string.Format("insert into tblOwner (ownerFirstName, ownerLastName, ownerUserName, ownerEmail, ownerPhoneNumber, ownerAddress, updatedTime)" +
             "values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}' )", txtOwnerFirstName.Text, txtOwnerLastName.Text, txtOwnerUserName.Text, txtOwnerEmail.Text, txtOwnerPhoneNumber.Text, txtOwnerAddress.Text, System.DateTime.Now.ToString());
-            SqlCommand command = dataaccess.GetCommand(sql);
+            SqlCommand command = dataAccess.GetCommand(sql);
 
             command.Connection.Open();
 
@@ -61,9 +61,8 @@ namespace property_bazar.Froms.Owner
         DataTable dt;
         private void btnViewOwner_Click(object sender, EventArgs e)
         {
-            DataAccess dataaccess = new DataAccess();
             String query = "Select * FROM tblOwner ";
-            SqlCommand commandd = dataaccess.GetCommand(query);
+            SqlCommand commandd = dataAccess.GetCommand(query);
             SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
 
             dt = new DataTable();
@@ -84,7 +83,6 @@ namespace property_bazar.Froms.Owner
 
         private void btnOwnerUpdate_Click(object sender, EventArgs e)
         {
-            DataAccess dataAccess = new DataAccess();
             string sql1 = string.Format("Select * FROM tblOwner  ");
             SqlCommand commandd = dataAccess.GetCommand(sql1);
             commandd.Connection.Open();
@@ -95,6 +93,21 @@ namespace property_bazar.Froms.Owner
 
             commandd.Connection.Close();
 
+        }
+
+        private void btnOwnerDelete_Click(object sender, EventArgs e)
+        {
+            string sql1 = string.Format("Select * FROM tblemployeeGenarelInfo ");
+            SqlCommand commandd = dataAccess.GetCommand(sql1);
+            commandd.Connection.Open();
+            String query = "DELETE FROM tblOwner  WHERE ownerUserName ='" + txtOwnerUserName.Text + "' ";
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
+            sda.SelectCommand.ExecuteNonQuery();
+
+
+            commandd.Connection.Close();
+            MessageBox.Show("Delete successfully!!!!");
         }
     }
 }

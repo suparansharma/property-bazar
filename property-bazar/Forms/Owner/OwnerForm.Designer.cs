@@ -48,6 +48,7 @@ namespace property_bazar.Froms.Owner
             this.dataGridViewOwner = new System.Windows.Forms.DataGridView();
             this.btnViewOwner = new System.Windows.Forms.Button();
             this.btnOwnerUpdate = new System.Windows.Forms.Button();
+            this.btnOwnerDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOwner)).BeginInit();
             this.SuspendLayout();
@@ -225,11 +226,22 @@ namespace property_bazar.Froms.Owner
             this.btnOwnerUpdate.UseVisualStyleBackColor = true;
             this.btnOwnerUpdate.Click += new System.EventHandler(this.btnOwnerUpdate_Click);
             // 
+            // btnOwnerDelete
+            // 
+            this.btnOwnerDelete.Location = new System.Drawing.Point(426, 434);
+            this.btnOwnerDelete.Name = "btnOwnerDelete";
+            this.btnOwnerDelete.Size = new System.Drawing.Size(66, 33);
+            this.btnOwnerDelete.TabIndex = 30;
+            this.btnOwnerDelete.Text = "DELETE";
+            this.btnOwnerDelete.UseVisualStyleBackColor = true;
+            this.btnOwnerDelete.Click += new System.EventHandler(this.btnOwnerDelete_Click);
+            // 
             // OwnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 546);
+            this.Controls.Add(this.btnOwnerDelete);
             this.Controls.Add(this.btnOwnerUpdate);
             this.Controls.Add(this.btnViewOwner);
             this.Controls.Add(this.dataGridViewOwner);
@@ -265,5 +277,6 @@ namespace property_bazar.Froms.Owner
         private System.Windows.Forms.DataGridView dataGridViewOwner;
         private System.Windows.Forms.Button btnViewOwner;
         private System.Windows.Forms.Button btnOwnerUpdate;
+        private System.Windows.Forms.Button btnOwnerDelete;
     }
 }
