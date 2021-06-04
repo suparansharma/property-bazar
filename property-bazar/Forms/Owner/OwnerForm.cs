@@ -62,7 +62,7 @@ namespace property_bazar.Froms.Owner
         private void btnViewOwner_Click(object sender, EventArgs e)
         {
             DataAccess dataaccess = new DataAccess();
-            String query = "Select * FROM tblOwnergit add ";
+            String query = "Select * FROM tblOwner ";
             SqlCommand commandd = dataaccess.GetCommand(query);
             SqlDataAdapter sda = new SqlDataAdapter(query, commandd.Connection);
 
@@ -70,6 +70,16 @@ namespace property_bazar.Froms.Owner
             sda.Fill(dt);
             dataGridViewOwner.DataSource = dt;
 
+        }
+
+        private void dataGridViewOwner_DoubleClick(object sender, EventArgs e)
+        {
+            txtOwnerFirstName.Text = dataGridViewOwner.SelectedRows[0].Cells[0].Value.ToString();
+            txtOwnerLastName.Text = dataGridViewOwner.SelectedRows[0].Cells[1].Value.ToString();
+            txtOwnerUserName.Text = dataGridViewOwner.SelectedRows[0].Cells[2].Value.ToString();
+            txtOwnerEmail.Text = dataGridViewOwner.SelectedRows[0].Cells[3].Value.ToString();
+            txtOwnerPhoneNumber.Text = dataGridViewOwner.SelectedRows[0].Cells[4].Value.ToString();
+            txtOwnerAddress.Text = dataGridViewOwner.SelectedRows[0].Cells[5].Value.ToString();
         }
     }
 }

@@ -202,6 +202,7 @@ namespace property_bazar.Froms.Owner
             this.dataGridViewOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewOwner.Size = new System.Drawing.Size(486, 284);
             this.dataGridViewOwner.TabIndex = 27;
+            this.dataGridViewOwner.DoubleClick += new System.EventHandler(this.dataGridViewOwner_DoubleClick);
             // 
             // btnViewOwner
             // 
