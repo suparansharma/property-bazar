@@ -47,6 +47,8 @@ namespace property_bazar.Froms.Owner
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewOwner = new System.Windows.Forms.DataGridView();
             this.btnViewOwner = new System.Windows.Forms.Button();
+            this.btnOwnerUpdate = new System.Windows.Forms.Button();
+            this.btnOwnerDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOwner)).BeginInit();
             this.SuspendLayout();
@@ -202,6 +204,7 @@ namespace property_bazar.Froms.Owner
             this.dataGridViewOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewOwner.Size = new System.Drawing.Size(486, 284);
             this.dataGridViewOwner.TabIndex = 27;
+            this.dataGridViewOwner.DoubleClick += new System.EventHandler(this.dataGridViewOwner_DoubleClick);
             // 
             // btnViewOwner
             // 
@@ -213,11 +216,33 @@ namespace property_bazar.Froms.Owner
             this.btnViewOwner.UseVisualStyleBackColor = true;
             this.btnViewOwner.Click += new System.EventHandler(this.btnViewOwner_Click);
             // 
+            // btnOwnerUpdate
+            // 
+            this.btnOwnerUpdate.Location = new System.Drawing.Point(325, 434);
+            this.btnOwnerUpdate.Name = "btnOwnerUpdate";
+            this.btnOwnerUpdate.Size = new System.Drawing.Size(66, 33);
+            this.btnOwnerUpdate.TabIndex = 29;
+            this.btnOwnerUpdate.Text = "UPDATE";
+            this.btnOwnerUpdate.UseVisualStyleBackColor = true;
+            this.btnOwnerUpdate.Click += new System.EventHandler(this.btnOwnerUpdate_Click);
+            // 
+            // btnOwnerDelete
+            // 
+            this.btnOwnerDelete.Location = new System.Drawing.Point(426, 434);
+            this.btnOwnerDelete.Name = "btnOwnerDelete";
+            this.btnOwnerDelete.Size = new System.Drawing.Size(66, 33);
+            this.btnOwnerDelete.TabIndex = 30;
+            this.btnOwnerDelete.Text = "DELETE";
+            this.btnOwnerDelete.UseVisualStyleBackColor = true;
+            this.btnOwnerDelete.Click += new System.EventHandler(this.btnOwnerDelete_Click);
+            // 
             // OwnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 546);
+            this.Controls.Add(this.btnOwnerDelete);
+            this.Controls.Add(this.btnOwnerUpdate);
             this.Controls.Add(this.btnViewOwner);
             this.Controls.Add(this.dataGridViewOwner);
             this.Controls.Add(this.panel1);
@@ -251,5 +276,7 @@ namespace property_bazar.Froms.Owner
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridViewOwner;
         private System.Windows.Forms.Button btnViewOwner;
+        private System.Windows.Forms.Button btnOwnerUpdate;
+        private System.Windows.Forms.Button btnOwnerDelete;
     }
 }
