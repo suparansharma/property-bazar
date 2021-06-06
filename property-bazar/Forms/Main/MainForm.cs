@@ -14,7 +14,7 @@ namespace property_bazar.Forms.Main
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public MainForm(Login.LoginForm loginForm)
         {
             InitializeComponent();
         }

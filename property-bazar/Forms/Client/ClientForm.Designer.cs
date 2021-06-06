@@ -46,6 +46,10 @@ namespace property_bazar.Froms.Client
             this.btnViewClient = new System.Windows.Forms.Button();
             this.btnUpdateClient = new System.Windows.Forms.Button();
             this.btnDeleteClient = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtClientPassword = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtClientUserName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,11 +204,47 @@ namespace property_bazar.Froms.Client
             this.btnDeleteClient.UseVisualStyleBackColor = true;
             this.btnDeleteClient.Click += new System.EventHandler(this.btnDeleteClient_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 377);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 15);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Password";
+            // 
+            // txtClientPassword
+            // 
+            this.txtClientPassword.Location = new System.Drawing.Point(104, 374);
+            this.txtClientPassword.Name = "txtClientPassword";
+            this.txtClientPassword.Size = new System.Drawing.Size(247, 23);
+            this.txtClientPassword.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 332);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 15);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "User Name";
+            // 
+            // txtClientUserName
+            // 
+            this.txtClientUserName.Location = new System.Drawing.Point(104, 329);
+            this.txtClientUserName.Name = "txtClientUserName";
+            this.txtClientUserName.Size = new System.Drawing.Size(247, 23);
+            this.txtClientUserName.TabIndex = 30;
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 496);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtClientPassword);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtClientUserName);
             this.Controls.Add(this.btnDeleteClient);
             this.Controls.Add(this.btnUpdateClient);
             this.Controls.Add(this.btnViewClient);
@@ -224,6 +264,7 @@ namespace property_bazar.Froms.Client
             this.Controls.Add(this.label1);
             this.Name = "ClientForm";
             this.Text = "ClientForm";
+            this.Load += new System.EventHandler(this.ClientForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,5 +290,9 @@ namespace property_bazar.Froms.Client
         private System.Windows.Forms.Button btnViewClient;
         private System.Windows.Forms.Button btnUpdateClient;
         private System.Windows.Forms.Button btnDeleteClient;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtClientPassword;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtClientUserName;
     }
 }

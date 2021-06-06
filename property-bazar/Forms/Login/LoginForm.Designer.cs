@@ -33,8 +33,8 @@ namespace property_bazar.Forms.Login
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtUserPassword = new System.Windows.Forms.TextBox();
-            this.txtUserId = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -78,19 +78,19 @@ namespace property_bazar.Forms.Login
             this.label2.TabIndex = 11;
             this.label2.Text = "PASSWORD";
             // 
-            // txtUserPassword
+            // txtPassword
             // 
-            this.txtUserPassword.Location = new System.Drawing.Point(520, 150);
-            this.txtUserPassword.Name = "txtUserPassword";
-            this.txtUserPassword.Size = new System.Drawing.Size(196, 23);
-            this.txtUserPassword.TabIndex = 10;
+            this.txtPassword.Location = new System.Drawing.Point(520, 150);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(196, 23);
+            this.txtPassword.TabIndex = 10;
             // 
-            // txtUserId
+            // txtUserName
             // 
-            this.txtUserId.Location = new System.Drawing.Point(520, 111);
-            this.txtUserId.Name = "txtUserId";
-            this.txtUserId.Size = new System.Drawing.Size(196, 23);
-            this.txtUserId.TabIndex = 9;
+            this.txtUserName.Location = new System.Drawing.Point(520, 111);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(196, 23);
+            this.txtUserName.TabIndex = 9;
             // 
             // btnExit
             // 
@@ -119,8 +119,8 @@ namespace property_bazar.Forms.Login
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUserPassword);
-            this.Controls.Add(this.txtUserId);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
@@ -140,8 +140,9 @@ namespace property_bazar.Forms.Login
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUserPassword;
-        private System.Windows.Forms.TextBox txtUserId;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }

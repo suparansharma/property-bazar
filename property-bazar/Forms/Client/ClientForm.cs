@@ -1,4 +1,5 @@
 ﻿using property_bazar.Database;
+using property_bazar.RandomNumberSample;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,6 +59,30 @@ namespace property_bazar.Froms.Client
 
 
             command.Connection.Close();
+        }
+
+
+
+        public void loginTableInsert()
+        {
+
+            DataAccess dataaccess = new DataAccess();
+            RandomGenerator generator = new RandomGenerator();
+            string pass = generator.RandomPassword();
+            txtClientPassword.Text = pass;
+            string sql1 = string.Format("insert into tblLogin (userName,password,updatedTime,UserType) " +
+                 "Values ('{0}','{1}','{2}','{3}')", txtClientUserName.Text, pass, System.DateTime.Now.ToString(), 2);
+            SqlCommand commandd = dataaccess.GetCommand(sql1);
+            commandd.Connection.Open();
+            int rowsAffected = commandd.ExecuteNonQuery();
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Insert Successfully!!" + " Password is " + pass);
+
+            }
+            else { MessageBox.Show("Something went wrong"); }
+            commandd.Connection.Close();
+
         }
 
         private void btnAddClient_Click(object sender, EventArgs e)
@@ -129,6 +154,11 @@ namespace property_bazar.Froms.Client
 
             commandd.Connection.Close();
             MessageBox.Show("Delete successfully!!!!");
+        }
+
+        private void ClientForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
