@@ -1,7 +1,7 @@
 ﻿
 namespace property_bazar.Forms.Main
 {
-    partial class MainForm
+    partial class HomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -53,15 +53,15 @@ namespace property_bazar.Forms.Main
             this.btnClient.UseVisualStyleBackColor = true;
             this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
-            // MainForm
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnOwner);
-            this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Name = "HomeForm";
+            this.Text = "Home Form";
             this.ResumeLayout(false);
 
         }

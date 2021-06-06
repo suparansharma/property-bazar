@@ -63,8 +63,11 @@ namespace property_bazar.Forms.Login
                     int ut = (int)Entities.Users.UsertypeEnum.Client;
                     Users usr = new Users(id, txtUserName.Text, txtPassword.Text, ut);
 
-                    ClientForm m = new ClientForm();
-                    m.Show();
+
+                    HomeForm hm = new HomeForm();
+                    hm.Show();
+
+                   
                     this.Hide();
                 }
             }

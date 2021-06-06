@@ -12,12 +12,14 @@ using System.Windows.Forms;
 
 namespace property_bazar.Forms.Main
 {
-    public partial class MainForm : Form
+    public partial class HomeForm : Form
     {
-        public MainForm(Login.LoginForm loginForm)
+        public HomeForm()
         {
             InitializeComponent();
         }
+
+      
 
         private void btnClient_Click(object sender, EventArgs e)
         {

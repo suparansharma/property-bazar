@@ -10,7 +10,7 @@
     <Compile Update="Forms\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Main\MainForm.cs">
+    <Compile Update="Forms\Home\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Owner\OwnerForm.cs">

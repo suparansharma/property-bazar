@@ -33,8 +33,11 @@ namespace property_bazar.Froms.Client
         public void AddClient()
         {
             DataAccess dataaccess = new DataAccess();
-            string sql = string.Format("insert into tblClient (firstName,lastName,email,phoneNumber,address)" +
-            "values('{0}', '{1}','{2}','{3}','{4}')", txtClientFirstName.Text, txtClientLastName.Text, txtClientEmail.Text, txtClientPhoneNumber.Text, txtClientAddress.Text);
+            RandomGenerator generator = new RandomGenerator();
+            string pass = generator.RandomPassword();
+            txtClientPassword.Text = pass;
+            string sql = string.Format("insert into tblClient (firstName,lastName,email,phoneNumber,address,userName,password,updatedTime,UserType)" +
+            "values('{0}', '{1}','{2}','{3}','{4}')", txtClientFirstName.Text, txtClientLastName.Text, txtClientEmail.Text, txtClientPhoneNumber.Text, txtClientAddress.Text, txtClientUserName.Text, pass, System.DateTime.Now.ToString(), 2);
             SqlCommand command = dataaccess.GetCommand(sql);
 
 
@@ -88,6 +91,7 @@ namespace property_bazar.Froms.Client
         private void btnAddClient_Click(object sender, EventArgs e)
         {
             AddClient();
+            loginTableInsert();
         }
         DataTable dt;
 
