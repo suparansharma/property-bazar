@@ -57,10 +57,10 @@ namespace property_bazar.Forms.Login
                 };
                 var userType = dt.Rows[0].Field<int>("UserType");
 
-                if (userType == (int)Entities.Users.UserTypeEnum.Clients)
+                if (userType == (int)Entities.Users.UserTypeEnum.Client)
                 {
                     int id = Convert.ToInt32(dt.Rows[0][0].ToString());
-                    int ut = (int)Entities.Users.UserTypeEnum.Clients;
+                    int ut = (int)Entities.Users.UserTypeEnum.Client;
                     Users usr = new Users(id, txtUserName.Text, txtPassword.Text, ut);
 
                     MainForm m = new MainForm();
